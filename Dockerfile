@@ -1,4 +1,4 @@
-FROM java:8
+FROM iron/java:1.8
 RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone 
 VOLUME  /tmp 
 COPY /target/eureka-docker-0.0.1-SNAPSHOT.jar app.jar
